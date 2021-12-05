@@ -1,0 +1,37 @@
+{
+  "name": "learn-blockchain",
+  "version": "1.0.0",
+  "description": "",
+  "private": "true",
+  "license": "MIT",
+  "keywords": [],
+  "author": {
+    "name": "Shubham Chawla",
+    "url": "https://www.linkedin.com/in/shubham1chawla/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shubham1chawla/learn-blockchain.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shubham1chawla/learn-blockchain/issues"
+  },
+  "main": "./build/index.js",
+  "scripts": {
+    "prepare": "husky install",
+    "start": "npm run build && node build/index.js",
+    "build": "rimraf ./build && tsc",
+    "format:check": "prettier --check .",
+    "format:fix": "prettier --write ."
+  },
+  "dependencies": {
+    "uuidv4": "^6.2.12"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.6",
+    "husky": "^7.0.4",
+    "prettier": "^2.5.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.4.4"
+  }
+}
