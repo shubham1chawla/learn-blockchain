@@ -1,24 +1,16 @@
 {
   "compilerOptions": {
-    "target": "es5",                          
-    "module": "CommonJS",                
-    "lib": ["es6"],                     
-    "allowJs": true,
-    "outDir": "build",                          
-    "rootDir": "src",
-    "baseUrl": ".",
-    "strict": true,         
-    "noImplicitAny": true,
-    "esModuleInterop": true,
     "sourceMap": true,
     "removeComments": true,
+    "strict": true,
+    "noImplicitAny": true,
     "strictNullChecks": true,
     "strictFunctionTypes": true,
     "noImplicitThis": true,
-    "alwaysStrict": true,  
+    "alwaysStrict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
+    "noFallthroughCasesInSwitch": true
   }
 }

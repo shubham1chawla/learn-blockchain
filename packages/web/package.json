@@ -1,7 +1,7 @@
 {
-  "name": "learn-blockchain",
+  "name": "@learn-blockchain/web",
+  "description": "A web package containing web-related code and files",
   "version": "1.0.0",
-  "description": "",
   "license": "MIT",
   "keywords": [],
   "author": {
@@ -15,13 +15,5 @@
   "bugs": {
     "url": "https://github.com/shubham1chawla/learn-blockchain/issues"
   },
-  "private": "true",
-  "workspaces": [
-    "packages/*"
-  ],
-  "scripts": {
-    "prepare": "husky install",
-    "format:check": "prettier --check .",
-    "format:fix": "prettier --write ."
-  }
+  "private": "true"
 }

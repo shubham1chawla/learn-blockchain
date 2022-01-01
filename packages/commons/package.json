@@ -1,7 +1,7 @@
 {
-  "name": "learn-blockchain",
+  "name": "@learn-blockchain/commons",
+  "description": "A commons package that contains shared files",
   "version": "1.0.0",
-  "description": "",
   "license": "MIT",
   "keywords": [],
   "author": {
@@ -16,12 +16,10 @@
     "url": "https://github.com/shubham1chawla/learn-blockchain/issues"
   },
   "private": "true",
-  "workspaces": [
-    "packages/*"
-  ],
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "scripts": {
-    "prepare": "husky install",
-    "format:check": "prettier --check .",
-    "format:fix": "prettier --write ."
+    "build": "rimraf ./dist && tsc",
+    "example": "npm run build && node ./dist/index.js"
   }
 }
