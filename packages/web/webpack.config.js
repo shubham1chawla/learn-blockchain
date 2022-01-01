@@ -6,5 +6,5 @@ module.exports = {
       stream: require.resolve('stream-browserify'),
     },
   },
-  mode: 'production',
+  mode: 'development',
 };

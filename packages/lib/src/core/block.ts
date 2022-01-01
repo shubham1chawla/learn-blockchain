@@ -43,11 +43,9 @@ export class PendingRecord<R extends Record> {
 
 export abstract class Block<R extends Record> {
   protected _id: string;
-  nonce: number;
 
   constructor(readonly prevHash: string | null, readonly records: R[]) {
     this._id = v4();
-    this.nonce = Math.round(Math.random() * 99999);
   }
 
   get id(): string {

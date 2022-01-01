@@ -5,6 +5,8 @@ export class TxBlock extends Block<Transaction> {
   private static readonly REQ_LEN = 4;
   private static readonly REQ_STR = new Array(TxBlock.REQ_LEN).fill(0).join('');
 
+  nonce: number = Math.round(Math.random() * 99999);
+
   constructor(prevHash: string | null, transactions: Transaction[]) {
     super(prevHash, transactions);
   }

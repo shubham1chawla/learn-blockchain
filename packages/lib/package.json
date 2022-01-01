@@ -17,5 +17,9 @@
   },
   "private": "true",
   "main": "dist/index.js",
-  "typings": "dist/index.d.ts"
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "build": "rimraf ./dist && tsc",
+    "start": "npm run build && node ./dist/console.js"
+  }
 }

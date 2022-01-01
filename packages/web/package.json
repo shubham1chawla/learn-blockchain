@@ -17,6 +17,9 @@
   },
   "private": "true",
   "main": "dist/index.js",
+  "scripts": {
+    "build": "webpack"
+  },
   "dependencies": {
     "@learn-blockchain/lib": "1.0.0"
   }
