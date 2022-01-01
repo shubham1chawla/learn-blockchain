@@ -22,6 +22,9 @@
   "scripts": {
     "prepare": "husky install",
     "format:check": "prettier --check .",
-    "format:fix": "prettier --write ."
+    "format:fix": "prettier --write .",
+    "build:lib": "cd ./packages/lib && rimraf ./dist && tsc",
+    "build:web": "cd ./packages/web && webpack",
+    "start:console": "npm run build:lib && node ./packages/lib/dist/console.js"
   }
 }

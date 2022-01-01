@@ -1,5 +1,5 @@
 {
-  "name": "@learn-blockchain/commons",
+  "name": "@learn-blockchain/lib",
   "description": "A commons package that contains shared files",
   "version": "1.0.0",
   "license": "MIT",
@@ -17,9 +17,5 @@
   },
   "private": "true",
   "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
-  "scripts": {
-    "build": "rimraf ./dist && tsc",
-    "example": "npm run build && node ./dist/index.js"
-  }
+  "typings": "dist/index.d.ts"
 }

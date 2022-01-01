@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/shubham1chawla/learn-blockchain/issues"
   },
-  "private": "true"
+  "private": "true",
+  "main": "dist/index.js",
+  "dependencies": {
+    "@learn-blockchain/lib": "1.0.0"
+  }
 }
